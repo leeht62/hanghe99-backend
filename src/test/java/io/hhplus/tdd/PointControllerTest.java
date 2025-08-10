@@ -82,7 +82,6 @@ public class PointControllerTest {
     // userId로 히스토리 조회시 위 리스트 반환
     when(mockHistory.selectAllByUserId(userId)).thenReturn(mockHistories);
 
-    // 컨트롤러에 mock 주입
     PointController controller = new PointController(mockTable, mockHistory);
 
     // 히스토리 조회
